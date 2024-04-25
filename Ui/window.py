@@ -55,7 +55,7 @@ class Window(FluentWindow):
         self.navigationInterface.addWidget(
             routeKey='avatar',
             widget=NavigationAvatarWidget('zhiyiYo', 'resource/shoko.png'),
-            onClick=self.showMessageBox,
+            #onClick=self.showMessageBox,
             position=NavigationItemPosition.BOTTOM,
         )
 
@@ -99,7 +99,7 @@ class Window(FluentWindow):
         # self.navigationInterface.setMinimumExpandWidth(900)
         # self.navigationInterface.expand(useAni=False)
 
-    def showMessageBox(self):
+"""    def showMessageBox(self):
         w = MessageBox(
             '支持作者🥰',
             '个人开发不易，如果这个项目帮助到了您，可以考虑请作者喝一瓶快乐水🥤。您的支持就是作者开发和维护项目的动力🚀',
@@ -111,4 +111,4 @@ class Window(FluentWindow):
         if w.exec():
             QDesktopServices.openUrl(QUrl("https://afdian.net/a/zhiyiYo"))
 
-
+"""
