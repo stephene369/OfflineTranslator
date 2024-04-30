@@ -1,8 +1,8 @@
 # coding:utf-8
 import sys
 
-from PyQt5.QtCore import Qt, QUrl
-from PyQt5.QtGui import QIcon, QDesktopServices
+from PyQt5.QtCore import Qt, QUrl 
+from PyQt5.QtGui import QIcon, QDesktopServices 
 from PyQt5.QtWidgets import QApplication, QFrame, QHBoxLayout
 from qfluentwidgets import (NavigationItemPosition, MessageBox, setTheme, Theme, FluentWindow,
                             NavigationAvatarWidget, qrouter, SubtitleLabel, setFont, InfoBadge,
@@ -54,8 +54,8 @@ class Window(FluentWindow):
         # add custom widget to bottom
         self.navigationInterface.addWidget(
             routeKey='avatar',
-            widget=NavigationAvatarWidget('zhiyiYo', 'resource/shoko.png'),
-            #onClick=self.showMessageBox,
+            widget=NavigationAvatarWidget('stephene369', 'resources/images/logo.png'),
+            onClick=self.showMessageBox,
             position=NavigationItemPosition.BOTTOM,
         )
 
@@ -84,7 +84,7 @@ class Window(FluentWindow):
 
     def initWindow(self):
         self.resize(900, 700)
-        self.setWindowIcon(QIcon(':/qfluentwidgets/images/logo.png'))
+        self.setWindowIcon(QIcon('resources/images/logo1.png'))
         self.setWindowTitle('Offline Translator')
 
         desktop = QApplication.desktop().availableGeometry()
@@ -99,16 +99,16 @@ class Window(FluentWindow):
         # self.navigationInterface.setMinimumExpandWidth(900)
         # self.navigationInterface.expand(useAni=False)
 
-"""    def showMessageBox(self):
+    def showMessageBox(self):
         w = MessageBox(
-            '支持作者🥰',
-            '个人开发不易，如果这个项目帮助到了您，可以考虑请作者喝一瓶快乐水🥤。您的支持就是作者开发和维护项目的动力🚀',
+            'stephenew36@gmail.com',
+            'Thank you for reaching out to us with your contributions and questions. We look forward to hearing from you!' , 
             self
         )
-        w.yesButton.setText('来啦老弟')
-        w.cancelButton.setText('下次一定')
+        w.yesButton.setText('github')
+        w.cancelButton.setText('cancel')
 
         if w.exec():
-            QDesktopServices.openUrl(QUrl("https://afdian.net/a/zhiyiYo"))
+            QDesktopServices.openUrl(QUrl("https://github.com/stephene369/"))
 
-"""
+

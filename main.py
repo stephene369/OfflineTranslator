@@ -2,6 +2,7 @@
 
 from Ui.window import * 
 
+
 if __name__ == '__main__':
     QApplication.setHighDpiScaleFactorRoundingPolicy(Qt.HighDpiScaleFactorRoundingPolicy.PassThrough)
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
@@ -14,4 +15,4 @@ if __name__ == '__main__':
     w.show()
     app.exec_()
 
-
+    

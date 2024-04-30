@@ -58,14 +58,17 @@ class HomeWidget(SmoothScrollArea):
         self.frame2 = QFrame(self.Frame)
 
         self.Title = SubtitleLabel(self.frame1)
-        self.Title.setText("Translate text from an languageto \nan other using your available Packages : ")
+        self.Title.setText("Translate using\nan available Package : ")
 
         self.combo = ComboBox(self.frame1)
         self.combo.currentTextChanged.connect(self.updateLabel)
 
         self.from_editor = TextEdit(self.frame2)
+        self.from_editor.setObjectName("FromEditor")
         self.from_editor.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.to_editor = TextEdit(self.frame2)
+        self.to_editor.setObjectName("ToEditor")
+
         self.to_editor.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
             
 

@@ -5,4 +5,10 @@ QFrame {
 QScrollArea {
     border: none;
 } 
+#FromEditor{
+    font-size: 18px;
+}
 
+#ToEditor{
+    font-size: 18px;
+}
